@@ -1,7 +1,26 @@
 body {
     margin: 0;
+    font-family: "Smythe", system-ui;
 }
-
+.hero {
+    position: relative;
+    height: 20vh;
+    font-size: 39px;
+    color: white;
+    background-image: url("cover.jpg");
+    background-size: cover;
+    background-position: 65% 75%;
+}
+.hero-content {
+    position: absolute;
+    padding: 50px 70px;
+    align-items: center;
+    text-align: left;
+}
+.hero-content h1,
+.hero-content p {
+    margin: 0;
+}
 .menu-item {
     display: flex;
     align-items: center;
