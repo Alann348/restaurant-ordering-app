@@ -17,3 +17,17 @@ document.getElementById('menu').innerHTML = menuHtml;
 }
 
 renderMenu();
+
+function renderOrder () {
+    let orderHtml = '';
+    orderHtml += `<div class="order-item">
+        <h3 class="order-name">Pizza</h3>
+        <button class="remove-btn" id="remove-btn">remove</button>
+        <p class="order-price">${totalPrice}</p>
+        <button class="complete-btn" id="complete-btn">Complete order</button>
+    </div>`
+    
+    document.getElementById('order').innerHTML = orderHtml;
+}
+renderOrder();
+
