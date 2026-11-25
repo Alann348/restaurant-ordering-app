@@ -1,6 +1,8 @@
 body {
     margin: 0;
     font-family: "Smythe", system-ui;
+    .p {
+        color: grey;   }
 }
 .hero {
     position: relative;
@@ -53,14 +55,149 @@ body {
 }
 
 .add-btn {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #3c3c3c;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-left: auto;
+    flex-shrink: 0;
     cursor: pointer;
+}
+
+.add-btn:hover {
+    border-color: #4CAF50;
+    color: #4CAF50;
+}
+/* ---------- Order section ---------- */
+#order {
+    margin: 30px 10px;
+    padding: 0 10px;
+}
+
+.order-title {
+    text-align: center;
+    font-size: 28px;
+    margin: 0 0 20px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.order-name {
+    margin: 0;
+    font-size: 24px;
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    color: #bbb;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.remove-btn:hover {
+    color: #e53935;
+}
+
+.order-price {
+    margin: 0 0 0 auto;
+    font-size: 20px;
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #3c3c3c;
+    padding-top: 15px;
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+.complete-btn {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 18px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.complete-btn:hover {
+    background-color: #43a047;
+}
+
+/* ---------- Payment modal ---------- */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 6px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.modal-title {
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+.modal-content input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.pay-btn {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 18px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.pay-btn:hover {
+    background-color: #43a047;
+}
+
+/* ---------- Thanks message ---------- */
+.thanks-message {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    text-align: center;
+    font-size: 24px;
+    padding: 30px;
+    border-radius: 4px;
+    margin: 0;
 }
